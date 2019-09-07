@@ -32,12 +32,6 @@ def load_dataset():
 
 # Defining the neural network structure
 
-'''
-n_x: the size of the input layer
-n_h: the size of the hidden layer (set this to 4)
-n_y: the size of the output layer
-'''
-
 def layer_sizes(X, Y):
     '''
     Defining the neural network structure
@@ -126,7 +120,7 @@ def forward_propagation(X, parameters):
 
     return A2, cache
 
-# Implentment compute cost
+# Implement compute cost
 
 def compute_cost(A2, Y, parameters):
     '''
@@ -191,6 +185,7 @@ def backward_propagation(parameters, cache, X, Y):
     return grads
 
 # update parameters
+
 def update_parameters(parameters, grads, learning_rate = 1.2):
     '''
     Update parameters using the gradient descent update rule

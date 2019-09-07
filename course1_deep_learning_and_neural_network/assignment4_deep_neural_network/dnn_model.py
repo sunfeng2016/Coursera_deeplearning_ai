@@ -181,7 +181,7 @@ def L_model_forward(X, parameters):
     return AL, caches
 
 # Cost function
-def compute_cost(Al, Y):
+def compute_cost(AL, Y):
     """
     Implement the cost function (the cross-entropy cost J)
     
